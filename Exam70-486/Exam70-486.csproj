@@ -150,8 +150,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PhotoController.cs" />
+    <Compile Include="DataInitializer\Initializer.cs" />
     <Compile Include="Data\Comment.cs" />
     <Compile Include="Data\Photo.cs" />
     <Compile Include="Data\PhotoSharingContext.cs" />
@@ -171,6 +173,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Iglika.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -203,6 +206,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Photo\Index.cshtml" />
     <Content Include="Views\Photo\Details.cshtml" />
+    <Content Include="Views\Error\NotFound.cshtml" />
+    <Content Include="Views\Error\Error.cshtml" />
+    <Content Include="Views\Photo\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

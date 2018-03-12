@@ -71,8 +71,15 @@ namespace Exam70_486.Controllers
         public ContentResult GetImage(int id)
         {
             var photoImage = context.Photos.FirstOrDefault(p => p.PhotoId == id);
-            
+
             return Content(photoImage.Url);
+        }
+
+        public ActionResult Details(int id)
+        {
+            var photo = context.Photos.FirstOrDefault(p => p.PhotoId == id);
+
+            return View(photo);
         }
     }
 }
