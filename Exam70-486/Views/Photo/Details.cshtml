@@ -9,10 +9,16 @@
 <div>
     <h4>Photo</h4>
     <hr />
-    <dl class="dl-horizontal">
-    </dl>
+    <dl class="dl-horizontal"></dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.PhotoId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<div class="panel">
+    <p>
+        @Html.DisplayNameFor(model => model.CreatedDate)
+    </p>
+    <p>@Html.DisplayFor(model => model.CreatedDate)</p>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.PhotoId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+    <img src="@Html.Action("GetImage",Model.PhotoId)" alt="Alternate Text" width="200" height="200" />
+</div>
